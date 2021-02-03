@@ -14,7 +14,7 @@ url = 'https://raw.githubusercontent.com/boscolio/spotify_data/main/spotify.csv'
 songs = pd.read_csv(url)
 list_of_names = songs.name
 
-predictor = pickle.load('app/model_knn.pkl')
+predictor = pickle.load('model_knn.pkl')
 print('pickled model loaded')
 
 class Song(BaseModel):
