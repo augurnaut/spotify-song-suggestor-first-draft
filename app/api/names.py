@@ -15,4 +15,4 @@ async def names():
       names.append(songs.name.iloc[i])
 names_json = json.dumps(names)
 
-return '[dict of names]'
+return '[dict of names]', names_json
